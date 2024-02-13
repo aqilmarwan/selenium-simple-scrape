@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.service import Service
 service = Service(executable_path="./chromedriver")
 driver = webdriver.Chrome(service=service)
 
-driver.get("https://www.linkedin.com/jobs/search/?currentJobId=3787393812&distance=25&geoId=101165590&keywords=intern&origin=JOB_COLLECTION_PAGE_KEYWORD_HISTORY&refresh=true&start=25")
+driver.get("TARGET-LINK")
 
 job_listings = driver.find_elements(By.XPATH, '//*[@id="main-content"]/section[2]/ul/li')
 
